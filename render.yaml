@@ -4,7 +4,7 @@ services:
     repo: https://github.com/Akshay-Eypz/izumi-bot.git
     branch: main
     env: docker
-    dockerfilePath: Dockerfile
+    dockerfilePath: docker pull ghcr.io/eypzffx/izumi:latest
     plan: free
     autoDeploy: false
     envVars:
@@ -24,4 +24,4 @@ services:
       - key: MODE
         value: "private"
       - key: PORT
-        value: "3000"
+        value: "8000"
